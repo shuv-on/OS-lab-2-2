@@ -6,13 +6,14 @@ import sys
 import re  # Speed extract-এর জন্য regex
 
 # Configuration
-source_dir = '/home/shuvon/test_files'  # আপনার source path
-dest_hdd = '/mnt/Academic/test_dest'  # HDD dest (আপডেটেড)
+source_dir = '/home/shuvon/test_files'  # Source path
+dest_ssd = '/home/shuvon/test_dest'  # SSD dest
+dest_hdd = '/mnt/Academic/test_dest'  # HDD dest
 dest_usb3 = '/media/shuvon/Falcon/test_dest'  # USB 3.0 dest
-destinations = [dest_hdd, dest_usb3]  # HDD + USB
-storages = ['HDD', 'USB 3.0']  # Labels
+destinations = [dest_ssd, dest_hdd, dest_usb3]  # SSD + HDD + USB
+storages = ['SSD NVMe', 'HDD', 'USB 3.0']  # Labels
 runs = 3  # প্রতি file type-এ run সংখ্যা
-csv_file = 'baseline_hdd_usb.csv'  # Output CSV
+csv_file = 'baseline_all.csv'  # Output CSV
 
 # File types and sizes
 file_types = {
